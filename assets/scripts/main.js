@@ -11,7 +11,7 @@ const recipes = [
 // Once all of the recipes that were specified above have been fetched, their
 // data will be added to this object below. You may use whatever you like for the
 // keys as long as it's unique, one suggestion might but the URL itself
-const recipeData = {}
+const recipeData = {};
 
 window.addEventListener('DOMContentLoaded', init);
 
@@ -19,6 +19,7 @@ window.addEventListener('DOMContentLoaded', init);
 async function init() {
   // fetch the recipes and wait for them to load
   let fetchSuccessful = await fetchRecipes();
+
   // if they didn't successfully load, quit the function
   if (!fetchSuccessful) {
     console.log('Recipe fetch unsuccessful');
@@ -31,6 +32,7 @@ async function init() {
 }
 
 async function fetchRecipes() {
+  // Seems like we're supposed to loop through the recipes array and fetch each item
   return new Promise((resolve, reject) => {
     // This function is called for you up above
     // From this function, you are going to fetch each of the recipes in the 'recipes' array above.
@@ -43,7 +45,31 @@ async function fetchRecipes() {
     // in the recipes folder and fetch them from there. You'll need to add their paths to the recipes array.
 
     // Part 1 Expose - TODO
+    let fetch_init = {
+      "credentials": "omit", 
+      "mode": "cors", 
+      "method": "GET", 
+      "headers": {
+        "Content-Type": "text/plain"
+      }
+    };
+
+    for(let i = 0; i < recipes.length; i++){
+      fetch(recipes[i], init)
+        .then(res => res.json())
+        .then(res => {
+          recipeData[i] = res;
+          if(Object.keys(recipeData).length == recipes.length){
+            resolve(true);
+          }
+        })
+        .catch(error => {
+          console.log(error);
+          reject(false);
+        });
+    }
   });
+
 }
 
 function createRecipeCards() {
@@ -54,6 +80,15 @@ function createRecipeCards() {
   // show any others you've added when the user clicks on the "Show more" button.
 
   // Part 1 Expose - TODO
+  let recipeKeys = Object.keys(recipeData);
+  for(let i = 0; i < recipeKeys.length; i++){
+    let recipe = recipeData[recipeKeys[i]];
+    let recipeCard = document.createElement("recipe-card");
+    recipeCard.data = recipe;
+    
+    let main = document.getElementsByTagName("main")[0];
+    main.appendChild(recipeCard);
+  }
 }
 
 function bindShowMore() {
@@ -65,4 +100,5 @@ function bindShowMore() {
   // in the recipeData object where you stored them/
 
   // Part 2 Explore - TODO
+  return null;
 }
