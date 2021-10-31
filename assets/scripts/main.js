@@ -8,7 +8,7 @@ const recipes = [
   'https://introweb.tech/assets/json/chocolateChip.json',
   'assets/recipes/blueberryLemonLoaf.json',
   'assets/recipes/broccoliPasta.json',
-  'assets/recipes/pumpkinSoup.json'
+  'assets/recipes/pumpkinSoup.json',
 ];
 var recipeDispCount = 0;
 
@@ -89,7 +89,7 @@ function createRecipeCards() {
   if(recipeKeys.length == recipeDispCount){
     return ;
   }
-
+  
   for(let i = recipeDispCount; i < (recipeDispCount+3); i++){
     let recipe = recipeData[recipeKeys[i]];
     let recipeCard = document.createElement("recipe-card");
@@ -110,8 +110,20 @@ function bindShowMore() {
   // in the recipeData object where you stored them/
 
   // Part 2 Explore - TODO
-  let showMore = document.getElementsByTagName("button")[0];
-  showMore.addEventListener('click', () => {
-    createRecipeCards();
+  let showBtn = document.getElementsByTagName("button")[0];
+  showBtn.addEventListener('click', () => {
+    if(showBtn.innerHTML == "Show more"){
+      createRecipeCards();
+      showBtn.innerHTML = "Show less";
+    }else{
+      let recipeCards = document.getElementsByTagName("recipe-card");
+      let rcKeys = Object.keys(recipeCards);
+      let rcl = rcKeys.length;
+      recipeCards[rcl-1].remove();
+      recipeCards[rcl-2].remove();
+      recipeCards[rcl-3].remove();
+      showBtn.innerHTML = "Show more"
+      recipeDispCount -= 3;
+    }
   });
 }

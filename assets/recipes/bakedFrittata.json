@@ -1,0 +1,323 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://www.recipetineats.com/#organization",
+            "name": "RecipeTin Eats",
+            "url": "https://www.recipetineats.com/",
+            "sameAs": [
+                "https://www.facebook.com/RecipeTinEats",
+                "http://instagram.com/recipe_tin",
+                "https://www.linkedin.com/in/nagi-maehashi-9779648b",
+                "https://www.youtube.com/c/recipetineats",
+                "http://www.pinterest.com/recipetin/"
+            ],
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "https://www.recipetineats.com/#logo",
+                "inLanguage": "en-US",
+                "url": "https://www.recipetineats.com/wp-content/uploads/2019/04/RecipeTinEats_logo_for_Knowledge_Graph_card.png",
+                "contentUrl": "https://www.recipetineats.com/wp-content/uploads/2019/04/RecipeTinEats_logo_for_Knowledge_Graph_card.png",
+                "width": 2591,
+                "height": 347,
+                "caption": "RecipeTin Eats"
+            },
+            "image": {
+                "@id": "https://www.recipetineats.com/#logo"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://www.recipetineats.com/#website",
+            "url": "https://www.recipetineats.com/",
+            "name": "RecipeTin Eats",
+            "description": "Fast Prep, Big Flavours",
+            "publisher": {
+                "@id": "https://www.recipetineats.com/#organization"
+            },
+            "potentialAction": [
+                {
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "https://www.recipetineats.com/?s={search_term_string}"
+                    },
+                    "query-input": "required name=search_term_string"
+                }
+            ],
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "ImageObject",
+            "@id": "https://www.recipetineats.com/baked-vegetable-frittata/#primaryimage",
+            "inLanguage": "en-US",
+            "url": "https://www.recipetineats.com/wp-content/uploads/2019/03/Baked-Frittata_1.jpg",
+            "contentUrl": "https://www.recipetineats.com/wp-content/uploads/2019/03/Baked-Frittata_1.jpg",
+            "width": 900,
+            "height": 1260,
+            "caption": "Overhead photo of Baked Frittata with Roasted Vegetables cut into slices, fresh out of the oven"
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://www.recipetineats.com/baked-vegetable-frittata/#webpage",
+            "url": "https://www.recipetineats.com/baked-vegetable-frittata/",
+            "name": "Baked Vegetable Frittata | RecipeTin Eats",
+            "isPartOf": {
+                "@id": "https://www.recipetineats.com/#website"
+            },
+            "primaryImageOfPage": {
+                "@id": "https://www.recipetineats.com/baked-vegetable-frittata/#primaryimage"
+            },
+            "datePublished": "2021-10-17T02:40:00+00:00",
+            "dateModified": "2021-10-17T02:44:47+00:00",
+            "description": "Baked Vegetable Frittata with roasted herb garlic vegetables, flavoured with cheese, pops of feta and topped with golden mushrooms. Oven baked - no stove!",
+            "breadcrumb": {
+                "@id": "https://www.recipetineats.com/baked-vegetable-frittata/#breadcrumb"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [
+                {
+                    "@type": "ReadAction",
+                    "target": [
+                        "https://www.recipetineats.com/baked-vegetable-frittata/"
+                    ]
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.recipetineats.com/baked-vegetable-frittata/#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.recipetineats.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Egg Recipes",
+                    "item": "https://www.recipetineats.com/category/egg-recipes/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Baked Vegetable Frittata"
+                }
+            ]
+        },
+        {
+            "@type": "Article",
+            "@id": "https://www.recipetineats.com/baked-vegetable-frittata/#article",
+            "isPartOf": {
+                "@id": "https://www.recipetineats.com/baked-vegetable-frittata/#webpage"
+            },
+            "author": {
+                "@id": "https://www.recipetineats.com/#/schema/person/1d495a057e0419b552333c8526d827a9"
+            },
+            "headline": "Baked Vegetable Frittata",
+            "datePublished": "2021-10-17T02:40:00+00:00",
+            "dateModified": "2021-10-17T02:44:47+00:00",
+            "wordCount": 1637,
+            "commentCount": 117,
+            "publisher": {
+                "@id": "https://www.recipetineats.com/#organization"
+            },
+            "image": {
+                "@id": "https://www.recipetineats.com/baked-vegetable-frittata/#primaryimage"
+            },
+            "thumbnailUrl": "https://www.recipetineats.com/wp-content/uploads/2019/03/Baked-Frittata_1.jpg",
+            "articleSection": [
+                "Breakfast",
+                "Easter Brunch Recipes",
+                "Egg Recipes",
+                "Gluten Free Recipes",
+                "Pumpkin recipes",
+                "Quick and Easy",
+                "Quick Dinner Recipes"
+            ],
+            "inLanguage": "en-US",
+            "potentialAction": [
+                {
+                    "@type": "CommentAction",
+                    "name": "Comment",
+                    "target": [
+                        "https://www.recipetineats.com/baked-vegetable-frittata/#respond"
+                    ]
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "@id": "https://www.recipetineats.com/#/schema/person/1d495a057e0419b552333c8526d827a9",
+            "name": "Nagi",
+            "image": {
+                "@type": "ImageObject",
+                "@id": "https://www.recipetineats.com/#personlogo",
+                "inLanguage": "en-US",
+                "url": "https://secure.gravatar.com/avatar/400004f5258d5b43d30deed3aa6e9566?s=96&d=https%3A%2F%2Fwww.recipetineats.com%2Fwp-content%2Fthemes%2Fonce-coupled-recipe-tin-eats%2Fassets%2Fimages%2Favatar-guest-temp-cache-bust-duplicate.png&r=g",
+                "contentUrl": "https://secure.gravatar.com/avatar/400004f5258d5b43d30deed3aa6e9566?s=96&d=https%3A%2F%2Fwww.recipetineats.com%2Fwp-content%2Fthemes%2Fonce-coupled-recipe-tin-eats%2Fassets%2Fimages%2Favatar-guest-temp-cache-bust-duplicate.png&r=g",
+                "caption": "Nagi"
+            },
+            "description": "I believe you can make great food with everyday ingredients even if you’re short on time and cost conscious. You just need to cook clever and get creative!",
+            "sameAs": [
+                "http:////www.recipetineats.com/about-me/"
+            ]
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Recipe",
+            "name": "Baked Vegetable Frittata",
+            "author": {
+                "@type": "Person",
+                "name": "Nagi"
+            },
+            "description": "Recipe video above. Healthy, delicous protein packed frittata that&#39;s great for making ahead. Think - breakfast on the run, picnics, or lunch on demand. Keeps 5 days in the fridge or months in the freezer!Soft and custardy on the inside, flavoured with a sprinkle of cheese and feta, studded with Roasted Herb Garlic Vegetables. SWITCH the veggies with 5 - 7 CUPS OF ANYTHING you want: cooked chicken, flaked tuna or salmon (fresh or canned), other vegetables, antipasto type things. See post for more ideas!",
+            "datePublished": "2021-10-17T13:40:00+00:00",
+            "image": [
+                "https://www.recipetineats.com/wp-content/uploads/2019/03/Baked-Frittata_1.jpg",
+                "https://www.recipetineats.com/wp-content/uploads/2019/03/Baked-Frittata_1.jpg?w=500&h=500&crop=1",
+                "https://www.recipetineats.com/wp-content/uploads/2019/03/Baked-Frittata_1.jpg?w=500&h=375&crop=1",
+                "https://www.recipetineats.com/wp-content/uploads/2019/03/Baked-Frittata_1.jpg?w=480&h=270&crop=1"
+            ],
+            "recipeYield": [
+                "8",
+                "8 - 12 slices"
+            ],
+            "prepTime": "PT15M",
+            "cookTime": "PT70M",
+            "totalTime": "PT85M",
+            "recipeIngredient": [
+                "10  eggs",
+                "3/4 cups cream or milk (, full fat best (Note 1))",
+                "1/2 tsp salt and pepper, each",
+                "1 1/2 cups shredded cheese ((cheddar, tasty, or other of choice))",
+                "100g/3 oz   mushroom, sliced ((I used 1 large, optional))",
+                "100g / 3oz   feta (, crumbled (optional))",
+                "2 tbsp olive oil",
+                "2  garlic cloves, minced",
+                "3/4 tsp salt",
+                "1/2 tsp pepper",
+                "1.5 tsp mixed dried herbs ((or use any of choice))",
+                "350g / 12oz   pumpkin (, butternut or sweet potato, 1.7cm / 0.7\" cubes)",
+                "2  zucchinis (, sliced 1.25 / 0.5\" thick rounds)",
+                "1  large red capsicum ((bell pepper), sliced)"
+            ],
+            "recipeInstructions": [
+                {
+                    "@type": "HowToSection",
+                    "name": "Roasted Vegetables:",
+                    "itemListElement": [
+                        {
+                            "@type": "HowToStep",
+                            "text": "Preheat oven to 220°C/430°F (200°C fan).",
+                            "name": "Preheat oven to 220°C/430°F (200°C fan).",
+                            "url": "https://www.recipetineats.com/baked-vegetable-frittata/#wprm-recipe-35968-step-0-0"
+                        },
+                        {
+                            "@type": "HowToStep",
+                            "text": "Toss vegetables on tray with oil, garlic, herbs, salt and pepper. Spread out.",
+                            "name": "Toss vegetables on tray with oil, garlic, herbs, salt and pepper. Spread out.",
+                            "url": "https://www.recipetineats.com/baked-vegetable-frittata/#wprm-recipe-35968-step-0-1"
+                        },
+                        {
+                            "@type": "HowToStep",
+                            "text": "Roast 25 minutes, undisturbed (no flipping). Remove and cool for at least 5 minutes before using.",
+                            "name": "Roast 25 minutes, undisturbed (no flipping). Remove and cool for at least 5 minutes before using.",
+                            "url": "https://www.recipetineats.com/baked-vegetable-frittata/#wprm-recipe-35968-step-0-2"
+                        }
+                    ]
+                },
+                {
+                    "@type": "HowToSection",
+                    "name": "Baked Frittata:",
+                    "itemListElement": [
+                        {
+                            "@type": "HowToStep",
+                            "text": "Lower oven to 180°C/350°F (160°C fan).",
+                            "name": "Lower oven to 180°C/350°F (160°C fan).",
+                            "url": "https://www.recipetineats.com/baked-vegetable-frittata/#wprm-recipe-35968-step-1-0"
+                        },
+                        {
+                            "@type": "HowToStep",
+                            "text": "Grease &amp; line pan: Spray a 19 x 30cm / 8 x 10&quot; rectangle or 22 cm / 9&quot; square pan lightly with oil, then line with parchment paper with overhang. (Note 3)",
+                            "name": "Grease &amp; line pan: Spray a 19 x 30cm / 8 x 10&quot; rectangle or 22 cm / 9&quot; square pan lightly with oil, then line with parchment paper with overhang. (Note 3)",
+                            "url": "https://www.recipetineats.com/baked-vegetable-frittata/#wprm-recipe-35968-step-1-1"
+                        },
+                        {
+                            "@type": "HowToStep",
+                            "text": "Egg mixture: Whisk eggs, cream, salt and pepper in a bowl.",
+                            "name": "Egg mixture: Whisk eggs, cream, salt and pepper in a bowl.",
+                            "url": "https://www.recipetineats.com/baked-vegetable-frittata/#wprm-recipe-35968-step-1-2"
+                        },
+                        {
+                            "@type": "HowToStep",
+                            "text": "Assemble: Spread 2/3 of the vegetables in the prepared pan. Pour over egg mixture, sprinkle with cheese, then top with remaining vegetables.",
+                            "name": "Assemble: Spread 2/3 of the vegetables in the prepared pan. Pour over egg mixture, sprinkle with cheese, then top with remaining vegetables.",
+                            "url": "https://www.recipetineats.com/baked-vegetable-frittata/#wprm-recipe-35968-step-1-3"
+                        },
+                        {
+                            "@type": "HowToStep",
+                            "text": "Topping: Top with crumbled feta, then mushrooms. Drizzle mushrooms with a touch of olive oil (makes it brown).",
+                            "name": "Topping: Top with crumbled feta, then mushrooms. Drizzle mushrooms with a touch of olive oil (makes it brown).",
+                            "url": "https://www.recipetineats.com/baked-vegetable-frittata/#wprm-recipe-35968-step-1-4"
+                        },
+                        {
+                            "@type": "HowToStep",
+                            "text": "Bake: Bake 40 minutes until centre is just set.",
+                            "name": "Bake: Bake 40 minutes until centre is just set.",
+                            "url": "https://www.recipetineats.com/baked-vegetable-frittata/#wprm-recipe-35968-step-1-5"
+                        },
+                        {
+                            "@type": "HowToStep",
+                            "text": "Rest &amp; serve: Rest frittata 5 minutes in the pan. Use paper overhang to lift out of pan, then slice into squares and serve.",
+                            "name": "Rest &amp; serve: Rest frittata 5 minutes in the pan. Use paper overhang to lift out of pan, then slice into squares and serve.",
+                            "url": "https://www.recipetineats.com/baked-vegetable-frittata/#wprm-recipe-35968-step-1-6"
+                        },
+                        {
+                            "@type": "HowToStep",
+                            "text": "Serving later: Cool on rack and remove paper from underneath (otherwise base gets soggy). Cut then refrigerate up to 5 days, or freeze. Reheat in microwave.",
+                            "name": "Serving later: Cool on rack and remove paper from underneath (otherwise base gets soggy). Cut then refrigerate up to 5 days, or freeze. Reheat in microwave.",
+                            "url": "https://www.recipetineats.com/baked-vegetable-frittata/#wprm-recipe-35968-step-1-7"
+                        }
+                    ]
+                }
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.98",
+                "ratingCount": "35"
+            },
+            "recipeCategory": [
+                "Breakfast",
+                "Brunch",
+                "Freezer Friendly",
+                "Lunchbox"
+            ],
+            "recipeCuisine": [
+                "Western"
+            ],
+            "keywords": "Baked frittata, Vegetable Frittata",
+            "nutrition": {
+                "@type": "NutritionInformation",
+                "calories": "332 kcal",
+                "carbohydrateContent": "7 g",
+                "proteinContent": "15 g",
+                "fatContent": "26 g",
+                "saturatedFatContent": "13 g",
+                "cholesterolContent": "268 mg",
+                "sodiumContent": "726 mg",
+                "fiberContent": "1 g",
+                "sugarContent": "4 g",
+                "servingSize": "1 serving"
+            },
+            "@id": "https://www.recipetineats.com/baked-vegetable-frittata/#recipe",
+            "isPartOf": {
+                "@id": "https://www.recipetineats.com/baked-vegetable-frittata/#article"
+            },
+            "mainEntityOfPage": "https://www.recipetineats.com/baked-vegetable-frittata/#webpage"
+        }
+    ]
+}
