@@ -5,8 +5,12 @@
 const recipes = [
   'https://introweb.tech/assets/json/ghostCookies.json',
   'https://introweb.tech/assets/json/birthdayCake.json',
-  'https://introweb.tech/assets/json/chocolateChip.json'
+  'https://introweb.tech/assets/json/chocolateChip.json',
+  'assets/recipes/blueberryLemonLoaf.json',
+  'assets/recipes/broccoliPasta.json',
+  'assets/recipes/pumpkinSoup.json'
 ];
+var recipeDispCount = 0;
 
 // Once all of the recipes that were specified above have been fetched, their
 // data will be added to this object below. You may use whatever you like for the
@@ -81,7 +85,12 @@ function createRecipeCards() {
 
   // Part 1 Expose - TODO
   let recipeKeys = Object.keys(recipeData);
-  for(let i = 0; i < recipeKeys.length; i++){
+  
+  if(recipeKeys.length == recipeDispCount){
+    return ;
+  }
+
+  for(let i = recipeDispCount; i < (recipeDispCount+3); i++){
     let recipe = recipeData[recipeKeys[i]];
     let recipeCard = document.createElement("recipe-card");
     recipeCard.data = recipe;
@@ -89,6 +98,7 @@ function createRecipeCards() {
     let main = document.getElementsByTagName("main")[0];
     main.appendChild(recipeCard);
   }
+  recipeDispCount += 3;
 }
 
 function bindShowMore() {
@@ -100,5 +110,8 @@ function bindShowMore() {
   // in the recipeData object where you stored them/
 
   // Part 2 Explore - TODO
-  return null;
+  let showMore = document.getElementsByTagName("button")[0];
+  showMore.addEventListener('click', () => {
+    createRecipeCards();
+  });
 }

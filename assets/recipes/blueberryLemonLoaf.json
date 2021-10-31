@@ -1,0 +1,305 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://www.recipetineats.com/#organization",
+            "name": "RecipeTin Eats",
+            "url": "https://www.recipetineats.com/",
+            "sameAs": [
+                "https://www.facebook.com/RecipeTinEats",
+                "http://instagram.com/recipe_tin",
+                "https://www.linkedin.com/in/nagi-maehashi-9779648b",
+                "https://www.youtube.com/c/recipetineats",
+                "http://www.pinterest.com/recipetin/"
+            ],
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "https://www.recipetineats.com/#logo",
+                "inLanguage": "en-US",
+                "url": "https://www.recipetineats.com/wp-content/uploads/2019/04/RecipeTinEats_logo_for_Knowledge_Graph_card.png",
+                "contentUrl": "https://www.recipetineats.com/wp-content/uploads/2019/04/RecipeTinEats_logo_for_Knowledge_Graph_card.png",
+                "width": 2591,
+                "height": 347,
+                "caption": "RecipeTin Eats"
+            },
+            "image": {
+                "@id": "https://www.recipetineats.com/#logo"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://www.recipetineats.com/#website",
+            "url": "https://www.recipetineats.com/",
+            "name": "RecipeTin Eats",
+            "description": "Fast Prep, Big Flavours",
+            "publisher": {
+                "@id": "https://www.recipetineats.com/#organization"
+            },
+            "potentialAction": [
+                {
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "https://www.recipetineats.com/?s={search_term_string}"
+                    },
+                    "query-input": "required name=search_term_string"
+                }
+            ],
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "ImageObject",
+            "@id": "https://www.recipetineats.com/blueberry-lemon-loaf/#primaryimage",
+            "inLanguage": "en-US",
+            "url": "https://www.recipetineats.com/wp-content/uploads/2016/06/Blueberry-Lemon-Loaf_34.jpg",
+            "contentUrl": "https://www.recipetineats.com/wp-content/uploads/2016/06/Blueberry-Lemon-Loaf_34.jpg",
+            "width": 900,
+            "height": 1125,
+            "caption": "Close up of slices of Blueberry Lemon Loaf , easy blueberry recipe"
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://www.recipetineats.com/blueberry-lemon-loaf/#webpage",
+            "url": "https://www.recipetineats.com/blueberry-lemon-loaf/",
+            "name": "Blueberry Bread Loaf | RecipeTin Eats",
+            "isPartOf": {
+                "@id": "https://www.recipetineats.com/#website"
+            },
+            "primaryImageOfPage": {
+                "@id": "https://www.recipetineats.com/blueberry-lemon-loaf/#primaryimage"
+            },
+            "datePublished": "2021-10-22T07:30:00+00:00",
+            "dateModified": "2021-10-30T23:07:49+00:00",
+            "description": "Less than 10 minutes to prepare this Blueberry Bread Loaf that is incredibly moist! Adapted from a Barefoot Contessa recipe, it is so delicious, the lemon glaze is optional!",
+            "breadcrumb": {
+                "@id": "https://www.recipetineats.com/blueberry-lemon-loaf/#breadcrumb"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [
+                {
+                    "@type": "ReadAction",
+                    "target": [
+                        "https://www.recipetineats.com/blueberry-lemon-loaf/"
+                    ]
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.recipetineats.com/blueberry-lemon-loaf/#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.recipetineats.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Cake recipes",
+                    "item": "https://www.recipetineats.com/category/cake-recipes/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Blueberry Bread Loaf"
+                }
+            ]
+        },
+        {
+            "@type": "Article",
+            "@id": "https://www.recipetineats.com/blueberry-lemon-loaf/#article",
+            "isPartOf": {
+                "@id": "https://www.recipetineats.com/blueberry-lemon-loaf/#webpage"
+            },
+            "author": {
+                "@id": "https://www.recipetineats.com/#/schema/person/1d495a057e0419b552333c8526d827a9"
+            },
+            "headline": "Blueberry Bread Loaf",
+            "datePublished": "2021-10-22T07:30:00+00:00",
+            "dateModified": "2021-10-30T23:07:49+00:00",
+            "wordCount": 1694,
+            "commentCount": 181,
+            "publisher": {
+                "@id": "https://www.recipetineats.com/#organization"
+            },
+            "image": {
+                "@id": "https://www.recipetineats.com/blueberry-lemon-loaf/#primaryimage"
+            },
+            "thumbnailUrl": "https://www.recipetineats.com/wp-content/uploads/2016/06/Blueberry-Lemon-Loaf_34.jpg",
+            "articleSection": [
+                "Baking Recipes",
+                "Cake recipes",
+                "Easter Baking &amp; Desserts",
+                "Easter Brunch Recipes",
+                "Most Popular",
+                "Quick and Easy",
+                "Sweet",
+                "Thanksgiving Recipes"
+            ],
+            "inLanguage": "en-US",
+            "potentialAction": [
+                {
+                    "@type": "CommentAction",
+                    "name": "Comment",
+                    "target": [
+                        "https://www.recipetineats.com/blueberry-lemon-loaf/#respond"
+                    ]
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "@id": "https://www.recipetineats.com/#/schema/person/1d495a057e0419b552333c8526d827a9",
+            "name": "Nagi",
+            "image": {
+                "@type": "ImageObject",
+                "@id": "https://www.recipetineats.com/#personlogo",
+                "inLanguage": "en-US",
+                "url": "https://secure.gravatar.com/avatar/400004f5258d5b43d30deed3aa6e9566?s=96&d=https%3A%2F%2Fwww.recipetineats.com%2Fwp-content%2Fthemes%2Fonce-coupled-recipe-tin-eats%2Fassets%2Fimages%2Favatar-guest-temp-cache-bust-duplicate.png&r=g",
+                "contentUrl": "https://secure.gravatar.com/avatar/400004f5258d5b43d30deed3aa6e9566?s=96&d=https%3A%2F%2Fwww.recipetineats.com%2Fwp-content%2Fthemes%2Fonce-coupled-recipe-tin-eats%2Fassets%2Fimages%2Favatar-guest-temp-cache-bust-duplicate.png&r=g",
+                "caption": "Nagi"
+            },
+            "description": "I believe you can make great food with everyday ingredients even if you’re short on time and cost conscious. You just need to cook clever and get creative!",
+            "sameAs": [
+                "http:////www.recipetineats.com/about-me/"
+            ]
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Recipe",
+            "name": "Blueberry Bread Loaf",
+            "author": {
+                "@type": "Person",
+                "name": "Nagi | RecipeTin Eats"
+            },
+            "description": "Recipe video above. A quick blueberry lemon bread that is fast to prepare! Incredibly moist, bursting with blueberries and the fresh hint of lemon. The glaze is optional - it&#39;s delicious even without!",
+            "datePublished": "2021-10-22T18:30:00+00:00",
+            "image": [
+                "https://www.recipetineats.com/wp-content/uploads/2016/06/Blueberry-Lemon-Loaf_34-SQ.jpg",
+                "https://www.recipetineats.com/wp-content/uploads/2016/06/Blueberry-Lemon-Loaf_34-SQ.jpg?w=500&h=500&crop=1",
+                "https://www.recipetineats.com/wp-content/uploads/2016/06/Blueberry-Lemon-Loaf_34-SQ.jpg?w=500&h=375&crop=1",
+                "https://www.recipetineats.com/wp-content/uploads/2016/06/Blueberry-Lemon-Loaf_34-SQ.jpg?w=480&h=270&crop=1"
+            ],
+            "recipeYield": [
+                "8",
+                "8 - 12"
+            ],
+            "prepTime": "PT15M",
+            "cookTime": "PT75M",
+            "totalTime": "PT90M",
+            "recipeIngredient": [
+                "1 3/4 cups flour (, plain / all purpose)",
+                "1 cup white sugar (, preferably caster/superfine)",
+                "2 tsp baking powder",
+                "Pinch of salt",
+                "1 cup plain yoghurt ((preferably not low fat))",
+                "3  large eggs  (, 55 - 60g / 2oz each)",
+                "2 tsp lemon zest ((1 large or 2 small lemons))",
+                "1/2 teaspoon vanilla extract",
+                "1/2 cup canola oil ((or vegetable, grapeseed oil))",
+                "2 tsp flour",
+                "1 1/2 cups frozen or fresh blueberries ((no need to defrost))",
+                "1 1/2 cups soft icing sugar / powdered sugar (, sifted)",
+                "2 tbsp lemon juice",
+                "1-2 tbsp milk (, if needed)"
+            ],
+            "recipeInstructions": [
+                {
+                    "@type": "HowToStep",
+                    "text": "Preheat oven to 200°C/390°F (180°C fan forced).",
+                    "name": "Preheat oven to 200°C/390°F (180°C fan forced).",
+                    "url": "https://www.recipetineats.com/blueberry-lemon-loaf/#wprm-recipe-22073-step-0-0"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Line loaf pan: Butter and line a loaf pan with parchment / baking paper. The picture pan is 21 x 11 x 7 cm (8.3 x 4.5 x 2.75&quot;) which makes a nice tall loaf.",
+                    "name": "Line loaf pan: Butter and line a loaf pan with parchment / baking paper. The picture pan is 21 x 11 x 7 cm (8.3 x 4.5 x 2.75&quot;) which makes a nice tall loaf.",
+                    "url": "https://www.recipetineats.com/blueberry-lemon-loaf/#wprm-recipe-22073-step-0-1"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Coat blueberries: Toss blueberries in flour (less flour sticks if dry, more if frozen). This helps keep them suspended in the batter.",
+                    "name": "Coat blueberries: Toss blueberries in flour (less flour sticks if dry, more if frozen). This helps keep them suspended in the batter.",
+                    "url": "https://www.recipetineats.com/blueberry-lemon-loaf/#wprm-recipe-22073-step-0-2"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Whisk Dry ingredients in a bowl.",
+                    "name": "Whisk Dry ingredients in a bowl.",
+                    "url": "https://www.recipetineats.com/blueberry-lemon-loaf/#wprm-recipe-22073-step-0-3"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Add Wet ingredinets: Make a well in the Dry ingredients. Add Wet ingredients. Whisk until incorporated.",
+                    "name": "Add Wet ingredinets: Make a well in the Dry ingredients. Add Wet ingredients. Whisk until incorporated.",
+                    "url": "https://www.recipetineats.com/blueberry-lemon-loaf/#wprm-recipe-22073-step-0-4"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Fold in blueberries: Fold in blueberries, including any flour remaining in the blueberry bowl.",
+                    "name": "Fold in blueberries: Fold in blueberries, including any flour remaining in the blueberry bowl.",
+                    "url": "https://www.recipetineats.com/blueberry-lemon-loaf/#wprm-recipe-22073-step-0-5"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Bake: Pour into the prepared tin. Bake for 50 minutes, then cover with foil. Bake for a further 15 - 25 minutes, or until a skewer comes out clean. Check after 15 minutes, then if the skewer comes out with batter on it, bake a further 10 minutes.",
+                    "name": "Bake: Pour into the prepared tin. Bake for 50 minutes, then cover with foil. Bake for a further 15 - 25 minutes, or until a skewer comes out clean. Check after 15 minutes, then if the skewer comes out with batter on it, bake a further 10 minutes.",
+                    "url": "https://www.recipetineats.com/blueberry-lemon-loaf/#wprm-recipe-22073-step-0-6"
+                },
+                {
+                    "@type": "HowToStep",
+                    "text": "Cool: Rest for 5 minutes then turn onto a cooling rack and completely cool. Drizzle with Glaze. Wait until the glaze sets (about 20 minutes) before slicing to serve.",
+                    "name": "Cool: Rest for 5 minutes then turn onto a cooling rack and completely cool. Drizzle with Glaze. Wait until the glaze sets (about 20 minutes) before slicing to serve.",
+                    "url": "https://www.recipetineats.com/blueberry-lemon-loaf/#wprm-recipe-22073-step-0-7"
+                },
+                {
+                    "@type": "HowToSection",
+                    "name": "Glaze",
+                    "itemListElement": [
+                        {
+                            "@type": "HowToStep",
+                            "text": "Whisk icing sugar and lemon until smooth, using milk only if needed to achieve the right thickness (Note 3). Pour or spread over cake set on a rack over a baking tray. Scrape glaze drippings on the tray back onto the cake.",
+                            "name": "Whisk icing sugar and lemon until smooth, using milk only if needed to achieve the right thickness (Note 3). Pour or spread over cake set on a rack over a baking tray. Scrape glaze drippings on the tray back onto the cake.",
+                            "url": "https://www.recipetineats.com/blueberry-lemon-loaf/#wprm-recipe-22073-step-1-0"
+                        }
+                    ]
+                }
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.97",
+                "ratingCount": "33"
+            },
+            "recipeCategory": [
+                "Sweets"
+            ],
+            "recipeCuisine": [
+                "Baking"
+            ],
+            "keywords": "blueberry cake, Blueberry loaf bread, blueberry recipes",
+            "nutrition": {
+                "@type": "NutritionInformation",
+                "calories": "377 kcal",
+                "carbohydrateContent": "60 g",
+                "proteinContent": "5 g",
+                "fatContent": "14 g",
+                "saturatedFatContent": "2 g",
+                "transFatContent": "1 g",
+                "cholesterolContent": "52 mg",
+                "sodiumContent": "33 mg",
+                "fiberContent": "1 g",
+                "sugarContent": "41 g",
+                "unsaturatedFatContent": "12 g",
+                "servingSize": "1 serving"
+            },
+            "@id": "https://www.recipetineats.com/blueberry-lemon-loaf/#recipe",
+            "isPartOf": {
+                "@id": "https://www.recipetineats.com/blueberry-lemon-loaf/#article"
+            },
+            "mainEntityOfPage": "https://www.recipetineats.com/blueberry-lemon-loaf/#webpage"
+        }
+    ]
+}
