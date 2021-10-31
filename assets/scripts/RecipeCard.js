@@ -132,7 +132,7 @@ class RecipeCard extends HTMLElement {
       rating.innerHTML = avgRate;
 
       let ratingStars = document.createElement("img");
-      ratingStars.setAttribute("src", "../assets/images/icons/" + avgRate + "-star.svg");
+      ratingStars.setAttribute("src", "../images/icons/" + avgRate + "-star.svg");
       ratingStars.setAttribute("alt", avgRate + " stars");
 
       let totalRates = document.createElement("span");
